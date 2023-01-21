@@ -9,20 +9,22 @@
     <body>
         <header></header>
         <main>
-            <form action="#" method="post">
-                <label for="">FIRST NAME</label>
-                <input type="text" name="" id="">
-                <label for="">LAST NAME</label>
-                <input type="text" name="" id="">
-                <label for="">EMAIL</label>
-                <input type="email" name="" id="">
-                <label for="">PHONE NUMBER</label>
-                <input type="number" name="" id="">
-                <label for="">PASSWORD</label>
-                <input>
-                <label for="">CONRIRM PASSWORD</label>
-                <input type="text" name="" id="">
-            </form>
+            <div class="form">
+                <form action="#" method="post">
+                    <label for="first">FIRST NAME</label>
+                    <input type="text" name="first-name" id="first">
+                    <label for="last">LAST NAME</label>
+                    <input type="text" name="last-name" id="last">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email-id" id="email">
+                    <label for="phone-num">PHONE NUMBER</label>
+                    <input type="number" name="phone-number" id="phone-num">
+                    <label for="new-pass">PASSWORD</label>
+                    <input type="password" name="password" id="new-pass" pattern="(^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$)">
+                    <label for="conf-pass">CONFIRM PASSWORD</label>
+                    <input type="password" name="conf-password" id="conf-pass">
+                </form>
+            </div>
         </main>
     </body>
 </html>
