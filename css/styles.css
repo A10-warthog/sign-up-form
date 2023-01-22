@@ -16,8 +16,8 @@
 }
 
 .left {
-    flex: 1 1 30%;
-    background-image: url(../halie-west-25xggax4bSA-unsplash.jpg);
+    flex: 1 1 35%;
+    background-image: url(../denis-linine-W4o1oWx0k0g-unsplash.jpg);
     background-size: cover;
 }
 
@@ -43,6 +43,19 @@
     font-family: "Norse-Bold";
 }
 
+.credit {
+    position: relative;
+    top: 70vh;
+    text-align: center;
+    color: white;
+    font-family: "Norse-Bold";
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+.credit > :first-child > * {
+    color: white;
+}
 .right {
     flex: 1 1 70%;
     display: flex;
@@ -57,7 +70,7 @@
     padding: var(--padding);
     word-spacing: 1px;
     letter-spacing: 0.5px;
-    padding-top: 3rem;
+    padding-top: 2rem;
     padding-bottom: 2rem;
     font-weight: bold;
 }
@@ -108,31 +121,48 @@
 }
 
 .submit_btn {
-    padding: 0.7rem 3rem;
-    font-size: 0.8rem;
+    padding: 0.8rem 3rem;
+    font-size: 0.9rem;
     font-weight: bold;
     color: white;
     background-color: #596D48;
-    box-shadow: 
-        0.5px 2px 5px #afafaf66, 
-        -0.5px 2px 5px #afafaf66;
+    letter-spacing: 0.5px;
+    box-shadow: 0.5px 3px 5px #afafafdf;
     border: none;
     border-radius: 0.3rem;
     margin-bottom: 1.5rem;
 }
 
 .form_group > * > input{
-    padding: 0.25rem 0.3rem;
+    padding: 0.4rem;
     font-weight: bold;
+    border-radius: 0.2rem;
+    outline: none;
+    border: none;
+    border: 1px solid #aaa;
+}
+
+.form_group > * > input:focus {
+    outline: none;
+    border: none;
+    padding: 0.4rem;
+    border: 1px solid #1d4ed8;
+    box-shadow: 2px 2px 3px #ccce;
+
 }
 
 .form_group > * > label {
     font-size: 0.7rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     font-weight: 600;
     padding-bottom: 0.1rem;
 }
 
 .submit_info :last-child {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.submit_info :last-child > :first-child {
+    color: #596D48;
 }
