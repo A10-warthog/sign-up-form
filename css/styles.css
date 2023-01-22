@@ -23,16 +23,13 @@
     background-color: #f9fafb;
 }
 
-.right_contain {
-    margin-left: 4rem;
-}
-
 .intro {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
-    width: 70%;
+    width: 50%;
     margin: 0;
     padding: var(--padding);
+    padding-top: 3rem;
 }
 
 .intro :first-child {
@@ -52,14 +49,12 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding-top: 2rem;
-    padding-left: 3rem;
-    padding-bottom: 2rem; 
-    margin-bottom: 2rem;
+    padding: 2rem 0 2rem 3rem;
+    margin-bottom: 1.7rem;
 }
 
 .form_title {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -77,20 +72,33 @@
     flex-direction: column;
 }
 
-.submit-info {
+.submit_info {
     padding-left: 3rem;
 }
 
 .submit_btn {
-    padding: 0.8rem 3rem;
-    font-size: 1rem;
+    padding: 0.7rem 3rem;
+    font-size: 0.8rem;
     font-weight: bold;
     color: white;
     background-color: #596D48;
     border: none;
     border-radius: 0.3rem;
-    outline-width: 1px;
-    outline-style: solid;
-    outline-color: #3b5723;
+    outline: 1px solid #3b4723;
     margin-bottom: 1.5rem;
+}
+
+.form_group > * > input{
+    padding: 0.2rem;
+}
+
+.form_group > * > label {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding-bottom: 0.1rem;
+}
+
+.submit_info :last-child {
+    font-size: 0.8rem;
 }
