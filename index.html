@@ -32,37 +32,50 @@
                 </div>
                 <div class="form">
                     <div class="form_field">
-                        <form class="form_div" action="" method="post">
+                        <form class="form_div" action="#" method="post">
                             <div class="form_input">
                                 <p class="form_title">Let's do this!</p>
                                 <div class="form_group name">
                                     <div class="name__first">
                                         <label for="first-name">FIRST NAME</label>
-                                        <input type="text" id="first-name" name="first-name" required>
+                                        <input class="input normal" type="text" id="first-name" name="first-name" required>
                                     </div>
                                     <div class="name__last">
                                         <label for="last-name">LAST NAME</label>
-                                        <input type="text" id="last-name" name="last-name" required>
+                                        <input class="input normal" type="text" id="last-name" name="last-name" required>
                                     </div>
                                 </div>
                                 <div class="form_group info">
                                     <div class="info__email">
                                         <label for="email">EMAIL</label>
-                                        <input type="email" id="email" name="email" placeholder="xyz@abc.com" required="required">
+                                        <input class="input normal" type="email" id="email" name="email" placeholder="xyz@abc.com" required="required">
                                     </div>
                                     <div class="info__phone">
                                         <label for="phone-number">PHONE NUMBER</label>
-                                        <input type="number" id="phone-number" name="phone-number">
+                                        <input class="input normal" type="number" id="phone-number" name="phone-number">
                                     </div>
                                 </div>
                                 <div class="form_group password">
-                                    <div class="password__new">
+                                    <div class="password__new password">
                                         <label for="new-pass">PASSWORD</label>
-                                        <input type="password" id="new-pass" name="new-pass" required>
+                                        <div class="new_pass" data-check="" data-color="">
+                                            <input
+                                            class="input newPass"
+                                            type="password"
+                                            id="new-pass"
+                                            data-name="new_pass"
+                                            name="new-pass"
+                                            pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$
+                                            " required>
+                                        </div>
+                                        <p class="new__txt error"></p>
                                     </div>
-                                    <div class="password__conf">
+                                    <div class="password__conf password">
                                         <label for="">CONFIRM PASSWORD</label>
-                                        <input type="password" id="conf-pass" name="conf-pass" required>
+                                        <div class="conf_password" data-check="">
+                                            <input class="input conf_pass normal" type="password" id="conf-pass" name="conf-pass" required>
+                                        </div>
+                                        <p class="conf__txt error"></p>
                                     </div>
                                 </div>
                             </div>
@@ -78,5 +91,6 @@
                 </div>
             </div>
         </div>
+        <script src="js/script.js"></script>
     </body>
 </html>
