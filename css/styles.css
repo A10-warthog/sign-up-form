@@ -116,6 +116,11 @@
     flex-direction: column;
 }
 
+.error {
+    padding: 0;
+    margin: 0;
+}
+
 .submit_info {
     padding-left: 3rem;
 }
@@ -131,6 +136,14 @@
     border: none;
     border-radius: 0.3rem;
     margin-bottom: 1.5rem;
+}
+
+.submit_btn:active {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px #596D48;
+}
+
+.submit_btn:hover {
+    background-color: #495D38;
 }
 
 .form_group > * > input{
