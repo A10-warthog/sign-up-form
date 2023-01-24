@@ -1,6 +1,6 @@
 # sign-up-form
 
-Learn to create basic from and password validation
+Learn to create basic form and password validation
 
 ## Credit
 
