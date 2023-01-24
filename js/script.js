@@ -51,4 +51,4 @@ function addEvent(elm, event, func) {
 }
 
 addEvent(inputNewPassword, "keyup", checkPass);
-addEvent(inputConfPass, "keyup", checkPass)
+addEvent(inputConfPass, "keyup", checkPass);

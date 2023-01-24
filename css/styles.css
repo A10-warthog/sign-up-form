@@ -248,4 +248,21 @@
         --left-body: 7.5vh;
         --logo-body: 36.5vh;
     }
+
+    .form_group {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .form_group > * {
+        width: 80%;
+    }
+
+    .form_group > * > label {
+        padding-bottom: 0.2rem;
+    }
+
+    .intro {
+        width: 75%;
+    }
 }
